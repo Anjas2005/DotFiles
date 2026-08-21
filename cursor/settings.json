@@ -36,12 +36,23 @@
             "commands": ["workbench.action.navigateRight"]
         },
 
+        {
+            "before": ["<space>", "e"],
+            "commands": ["yazi.toggle"]
+        },
 
+        {
+            "before": ["<space>", "s", "h"],
+            "commands": ["workbench.action.splitEditorLeft"]
+        },
         {
             "before": ["<space>", "s", "d"],
             "commands": ["workbench.action.splitEditorDown"]
         },
-
+        {
+            "before": ["<space>", "s", "k"],
+            "commands": ["workbench.action.splitEditorUp"]
+        },
         {
             "before": ["<space>", "s", "r"],
             "commands": ["workbench.action.splitEditorRight"]
@@ -64,7 +75,8 @@
         "<C-a>": false,
         "<C-c>": false,
         "<C-x>": false,
-        "<C-v>": false
+        "<C-v>": false,
+        "<C-q>": false
     },
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
 }
