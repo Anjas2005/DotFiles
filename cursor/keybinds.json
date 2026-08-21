@@ -1,6 +1,11 @@
 [
     {
-        "key": "space e",
-        "command": "yazi-vscode.toggle"
+        "key": "space",
+        "command": "extension.vim_space",
+        "when": "editorTextFocus && vim.mode == 'Normal' && !inQuickOpen && !inputFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closeActiveEditor"
     }
 ]
