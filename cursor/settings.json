@@ -1,0 +1,100 @@
+{
+    "vim.leader": " ",
+    "vim.useCtrlKeys": true,
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["J"],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": ["K"],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+
+        {
+            "before": ["<C-h>"],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+
+        {
+            "before": ["<leader>", "s", "h"],
+            "commands": [
+                "workbench.action.splitEditorLeft"
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "j"],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "k"],
+            "commands": [
+                "workbench.action.splitEditorUp"
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "l"],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ],
+
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ],
+
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        "<C-v>": false
+    },
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
+}
