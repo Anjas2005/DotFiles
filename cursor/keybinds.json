@@ -1,0 +1,6 @@
+[
+    {
+        "key": "space e",
+        "command": "yazi-vscode.toggle"
+    }
+]
