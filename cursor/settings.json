@@ -1,5 +1,6 @@
 {
     "vim.leader": " ",
+    "vim.timeout": 1000,
     "vim.useCtrlKeys": true,
 
     "vim.insertModeKeyBindings": [
@@ -11,82 +12,51 @@
 
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["J"],
-            "commands": [
-                "workbench.action.nextEditor"
-            ]
+            "before": ["H"],
+            "commands": ["workbench.action.previousEditor"]
         },
         {
-            "before": ["K"],
-            "commands": [
-                "workbench.action.previousEditor"
-            ]
+            "before": ["L"],
+            "commands": ["workbench.action.nextEditor"]
         },
-
         {
             "before": ["<C-h>"],
-            "commands": [
-                "workbench.action.navigateLeft"
-            ]
+            "commands": ["workbench.action.navigateLeft"]
         },
         {
             "before": ["<C-j>"],
-            "commands": [
-                "workbench.action.navigateDown"
-            ]
+            "commands": ["workbench.action.navigateDown"]
         },
         {
             "before": ["<C-k>"],
-            "commands": [
-                "workbench.action.navigateUp"
-            ]
+            "commands": ["workbench.action.navigateUp"]
         },
         {
             "before": ["<C-l>"],
-            "commands": [
-                "workbench.action.navigateRight"
-            ]
+            "commands": ["workbench.action.navigateRight"]
+        },
+
+
+        {
+            "before": ["<space>", "s", "d"],
+            "commands": ["workbench.action.splitEditorDown"]
         },
 
         {
-            "before": ["<leader>", "s", "h"],
-            "commands": [
-                "workbench.action.splitEditorLeft"
-            ]
-        },
-        {
-            "before": ["<leader>", "s", "j"],
-            "commands": [
-                "workbench.action.splitEditorDown"
-            ]
-        },
-        {
-            "before": ["<leader>", "s", "k"],
-            "commands": [
-                "workbench.action.splitEditorUp"
-            ]
-        },
-        {
-            "before": ["<leader>", "s", "l"],
-            "commands": [
-                "workbench.action.splitEditorRight"
-            ]
+            "before": ["<space>", "s", "r"],
+            "commands": ["workbench.action.splitEditorRight"]
         },
 
         {
-            "before": ["<leader>", "<leader>"],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
+            "before": ["<space>", "<space>"],
+            "commands": ["workbench.action.quickOpen"]
         }
     ],
 
     "vim.visualModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "<leader>"],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
+            "before": ["<space>", "<space>"],
+            "commands": ["workbench.action.quickOpen"]
         }
     ],
 
