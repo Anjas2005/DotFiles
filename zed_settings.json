@@ -1,0 +1,56 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "space space": "file_finder::Toggle",
+      "space f": "project_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space f": "workspace::FocusCenterPane",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "k j": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      // "space space": "file_finder::Toggle",
+      // "space f": "project_panel::ToggleFocus",
+
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+
+      "space c f": "workspace::FormatAndSave",
+    },
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-c": "editor::Copy",
+      "ctrl-x": "editor::Cut",
+      "ctrl-v": "editor::Paste",
+      "ctrl-f": "buffer_search::Deploy",
+      "ctrl-s": "workspace::Save",
+      "ctrl-o": "workspace::Open",
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-t": "project_symbols::Toggle",
+      "ctrl-y": "editor::Undo",
+    },
+  },
+]
